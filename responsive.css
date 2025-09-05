@@ -1,0 +1,406 @@
+ /* nav bar responsivness */
+ /* Mobile screens only */
+ .menu-toggle{
+  display: none;
+ }
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: auto;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    display: none; /* hidden by default */
+    background: #148e55;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+
+  /* hamburger button */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    
+    color: white;
+    margin-right: 1rem;
+  }
+
+
+
+  .hero-display {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .search {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-left input {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .hero-left button {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .hero-right {
+    width: 80%;
+    margin: 20px auto 0;
+  }
+
+  .hero-right img {
+    margin-top: 0;
+    height: auto;
+  }
+}
+
+
+/* footer responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer-logo {
+    font-size: 24px; /* Thoda chhota font */
+    margin-bottom: 15px;
+  }
+
+  .footer-nav {
+    flex-direction: column; /* Nav links vertically */
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .footer-nav a {
+    font-size: 14px; /* Mobile ke liye chhota font */
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .facebook, .instagram {
+    width: 30px;
+    height: 28px;
+  }
+
+  .fb {
+    width: 30px;
+    height: 28px;
+  }
+
+  .insta {
+    width: 22px;
+    height: 18px;
+  }
+}
+/* contact page-4 responsive */
+@media screen and (max-width: 768px) {
+  .contact-sec {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    height: auto;
+    padding: 20px;
+  }
+
+  .form-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .form-content h3 {
+    font-size: 28px; /* Chhota heading */
+  }
+
+  .form-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .form-row {
+    flex-direction: column; /* Inputs vertically stack */
+    width: 100%;
+    gap: 15px;
+    height: auto;
+  }
+
+  .form-row input,
+  .form-container textarea {
+    width: 100%; /* Full width inputs */
+    height: auto;
+  }
+
+  .form-container textarea {
+    width: 100%;
+    height: 120px; /* Mobile ke liye chhota */
+  }
+
+  .form-container button {
+    width: 100%;
+    max-width: 210px;
+    margin: 0 auto;
+  }
+
+  .delivery-guy-img {
+    width: 80%; /* Image chhoti aur center */
+    margin: 20px 0 0 0;
+    justify-content: center;
+  }
+
+  .delivery-guy-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* video-section responsive page-3 */
+@media (max-width: 768px) {
+  .container-3 {
+    padding: 0 15px;
+  }
+
+  .main-content h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .main-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .video-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-container .main-img {
+    width: 100%;
+    height: auto;
+    /* margin-left: 12%; */
+  }
+
+  .play {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .background {
+    height: 200px;
+    margin-top: -120px;
+  }
+}
+
+/* car item responsive */
+
+@media screen and (max-width: 768px) {
+  .page-2 {
+    padding: 20px 10px; /* thoda aur tight padding */
+  }
+
+  .cards-row {
+    justify-content: center; /* center align cards */
+    gap: 16px; /* gap between cards */
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    width: calc(50% - 8px); /* 2 cards per row with gap */
+    max-width: 50%; /* ensure no overflow */
+    margin: 0 auto; /* center each card */
+  }
+  .cards img {
+       
+        width: 160px;
+        height: 139px;
+    
+    }
+    .kitchen-card{
+      margin-left: 0;
+    }
+    .card-body{
+      padding: 2px;
+      margin-left: 14px;
+     
+    }
+    .card-body .card-header h3{
+      font-size: 13px;
+    }
+    .card-body .card-header{
+      margin-right: 29px;
+    }
+    .card-body .card-header p{
+      font-size: 13px;
+    }
+    .card-body .card-footer .rating{
+      width: 32px;
+      height: 28px;
+    }
+    .card-body .card-footer .rating .star{
+      font-size: 10px;
+    }
+     .card-body .card-footer .time-box{
+     height: 18px;
+        font-size: 10px;
+     }
+     .card-body .card-footer .add-btn{
+      margin-left: 10px;
+     }
+      .card-body .card-footer .add-btn img{
+        width: 20px;
+        height: 20px;
+      }
+}
+
+@media screen and (max-width: 768px){
+  /* Arrows ko chota rakhein lekin 0px na karein, unki image visible rahe */
+  .popular-item .card-item-container .nav-arrow {
+    width: 35px; /* Size adjust kiya */
+    height: 35px;
+  }
+  
+  /* Arrows ke andar ki image ko bhi chota karein */
+  .popular-item .card-item-container .nav-arrow img {
+      width: 15px;
+      height: 15px;
+  }
+  
+  /* Cards ko ek row mein ek dikhane ke liye */
+  .popular-item .card-item {
+    gap: 0; /* Cards ke beech ka gap hataya */
+    justify-content: flex-start; /* Left side se start karein */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Har card ki width ko 100% karein taaki ek hi dikhe */
+  .popular-item .card-item .cards {
+    width: 100%;
+    min-width: 100%; /* Ensure it's not smaller */
+  }
+
+  /* Center card effect ko mobile par disable karein */
+  .center-card {
+    box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+  }
+  #cardContainer .cards{
+    height: 220px;
+  }
+   #cardContainer .cards .dis{
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+   }
+   #cardContainer .card-body{
+    margin-left: 14px;
+   }
+    #cardContainer .card-body .card-header h3{
+      font-size: 10px;
+    }
+     #cardContainer .card-body .card-footer .rating-2{
+       width: 30px;
+       height: 13px;
+     }
+     #cardContainer .card-body .card-footer .time-box-2{
+      display: none;
+     }
+      #cardContainer .card-body .card-footer .add-btn-2{
+        width: 25px;
+        margin-left: 3px;
+      }
+      #cardContainer .card-body .card-footer .add-btn-2 img{
+        width: 19px;
+        height: 19px;
+      }
+      #cardContainer .card-body .card-footer .rating-3{
+       width: 30px;
+       height: 13px;
+     }
+     #cardContainer .card-body .card-footer .time-box-3{
+      display: none;
+     }
+      #cardContainer .card-body .card-footer .add-btn-3{
+        width: 25px;
+        margin-left: 3px;
+      }
+      #cardContainer .card-body .card-footer .add-btn-3 img{
+        width: 19px;
+        height: 19px;
+      }
+      #cardContainer .card-body .card-footer-1 .rating-1{
+       display: none;
+     }
+     #cardContainer .card-body .card-footer-1 .time-box-1{
+      display: none;
+     }
+      #cardContainer .card-body .card-footer-1 .add-1-btn{
+        width: 25px;
+        margin-left: 3px;
+      }
+      #cardContainer .card-body .card-footer-1 .add-1-btn .img1{
+        width: 19px;
+        height: 19px;
+      }
+       #cardContainer .card-body .card-footer-1 .add-1-btn .img2{
+        width: 19px;
+        height: 19px;
+      }
+       #cardContainer .card-body .card-footer-1 .add-1-btn .count{
+        width: 4px;
+       }
+}
+
+
+
+

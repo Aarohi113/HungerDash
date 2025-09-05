@@ -1,0 +1,82 @@
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    backdrop-filter: blur(5px); /* Blurs the background content */
+    display: flex; /* Centers the modal */
+    justify-content: center;
+    align-items: center;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially transparent */
+    transition: visibility 0s, opacity 0.3s linear;
+}
+
+.modal-container.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+/* Modal Content Styling */
+.modal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(0.9); /* Starts slightly smaller */
+    transition: transform 0.3s ease-in-out;
+}
+
+.modal-container.active .modal {
+    transform: scale(1); /* Scales up when active */
+}
+
+.modal h3 {
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+.modal-content {
+    margin: 20px 0;
+}
+
+#dish-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding in the element's total width and height */
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.modal-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #e0e0e0;
+    color: #555;
+}
+
+.submit-btn {
+    background-color: #1AC073;
+    color: white;
+}
